@@ -1,0 +1,81 @@
+.main {
+  padding: 10px 2rem;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+  border-radius: 5px;
+}
+
+.mainLight {
+  background-color: whitesmoke;
+}
+
+.mainDark {
+  background-color: hsl(209, 23%, 22%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.input {
+  max-width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+}
+
+.inputLight {
+  background-color: whitesmoke;
+}
+
+.inputDark {
+  background-color: hsl(209, 23%, 22%);
+  color: white;
+}
+
+.filter {
+  padding: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filterLight {
+  background-color: whitesmoke;
+}
+
+.filterDark {
+  background-color: hsl(209, 23%, 22%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.select {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.selectLight {
+  background-color: whitesmoke;
+}
+
+.selectDark {
+  background-color: hsl(209, 23%, 22%);
+  color: white;
+}
+
+@media (max-width: 940px) {
+  .main {
+    width: 40%;
+  }
+}
+
+@media (max-width: 690px) {
+  .main {
+    width: 100%;
+  }
+
+  .filter {
+    align-self: flex-end;
+  }
+}

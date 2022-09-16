@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Roboto Slab", serif;
+  background-color: whitesmoke;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  background-color: white;
+  padding: 2rem 5rem;
+  box-shadow: 3px 4px 8px rgb(226, 225, 225);
+}
+
+.navs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(209, 23%, 22%);
+  color: white;
+  padding: 2rem 5rem;
+  box-shadow: 3px 4px 8px rgb(21, 20, 20);
+}
+
+.light {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.dark {
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.theme {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: white;
+}
+
+.themes {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: black;
+}
+
+.center-load {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 4rem;
+}
+
+button span {
+  font-size: 1rem;
+}
+
+@media (max-width: 1135px) {
+  .nav {
+    padding: 2rem 3rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navs {
+    padding: 2rem 3rem;
+  }
+}
+
+@media (max-width: 690px) {
+  .nav {
+    padding: 1rem 1rem;
+  }
+
+  .navs {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 533px) {
+  .h1 {
+    font-size: 1.4rem;
   }
 }
